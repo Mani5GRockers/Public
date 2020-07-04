@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<style>
+body, html {
+  height: 100%;
+  
+  margin: 0;
+}
+
+.bgimg {
+  background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.squarespace-cdn.com%2Fcontent%2Fv1%2F591fd77d29687fd09cca478b%2F1555546030336-YXVPG30KTCM92JW89UTL%2Fke17ZwdGBToddI8pDm48kDrQ9tfdcvPUv7NgXGP4R2R7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0gmXcXvEVFTLbYX9CdVcGe4zwrosjp5YtnrvbmlM1LFKb7wNXE8lRZ0Z8l5PIsW3Vw%2FAdobeStock_139559217.jpeg&f=1&nofb=1');
+  height: 100%;
+  
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+}
+
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+
+
+hr {
+  margin: auto;
+  width: 40%;
+}
+</style>
+<body>
+
+<div class="bgimg">
+  <div class="topcenter">
+  
+  </div>
+  
+    <hr>
+    <p id="demo" style="font-size:30px"></p>
+  </div>
+  
+  </div>
+</div>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("aug 5, 2020 09:59:59").getTime();
+
+// Update the count down every 1 second
+var countdownfunction = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+  
+  // Find the distance between now an the count down date
+  var distance = countDownDate - now;
+  
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+  
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(countdownfunction);
+    document.getElementById("demo").innerHTML = "http://viprockers.p4.pw";
+  }
+}, 1000);
+</script>
+
+</body>
+</html>
